@@ -124,14 +124,24 @@
     font-weight: 900;
 }
 
+/* VARIABLES COULEUR */
 :root {
     --primary-color: #0065FC;
     --secondary-color: #DEEBFF;
     --background-color: #F2F2F2;
+    --stars-color: #DBDBDB;
+    --black-color: #000000;
+    --white-color: #FFFFFF;
 }
 
 body {
     font-family: 'Raleway', 'Arial', 'Sans-Serif';
+    margin: 0px;
+}
+
+/* SCORE */
+.fa-star {
+    color: var(--stars-color);
 }
 
 .score-1 i:first-of-type {
@@ -154,17 +164,219 @@ body {
     color: var(--primary-color);
 }
 
+#navigation {
+    position: relative;
+}
+
+#navigation nav a {
+    text-decoration: none;
+}
+
+#navigation nav {
+    display: flex;
+}
+
+#brand {
+    margin: 20px;
+}
+
+#brand img {
+    margin-top: 24px;
+    margin-bottom: 10px;
+}
+
+#signup {
+    color: var(--primary-color);
+    font-size: 1.2em;
+    font-weight: 600;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.navigation-button {
+    font-weight: 500;
+    color: var(--black-color);
+    border-bottom: 2px solid var(--background-color);
+    width: 50%;
+    text-align: center;
+    padding: 10px;
+    transition: border-color .2s ease-in-out, color .2s ease-in-out;
+}
+
+.selected {
+    color: var(--primary-color);
+    border-color: var(--primary-color);
+}
+
+.navigation-button:not(.selected):hover {
+    color: var(--primary-color);
+    border-color: var(--primary-color);
+}
+
+#search-menu {
+    margin: 16px;
+    margin-top: 30px
+}
+
+h1 {
+    font-weight: 700;
+    font-size: 1.5em;
+}
+
+#searchbox {
+    margin-top: 30px;
+    border: 1px solid var(--background-color);
+    display: flex;
+    border-radius: 15px;
+    overflow: hidden;
+}
+
+#searchbox > i {
+    margin: 0;
+    padding: 12px;
+    background-color: var(--background-color);
+    border-left: 2px solid var(--background-color);
+    border-right: 2px solid var(--background-color);
+    border-radius: 13px 0px 0px 13px;
+}
+
+#searchbox input {
+    padding-left: 20px;
+    width: 100%;
+    border: none;
+    outline: 0;
+    font-family: 'Raleway', 'Arial', 'Sans-Serif';
+    font-weight: 700;
+    font-size: 1.2em;
+}
+
+#searchbox input::placeholder {
+    font-weight: 700;
+}
+
+#searchbox button {
+    margin-left: auto;
+    border: 2px solid var(--primary-color);
+    padding: 12px;
+    background-color: var(--primary-color);
+    border-radius: 13px;
+    color: var(--white-color);
+    cursor:pointer;
+}
+
+#searchbox button i {
+    display: none;
+}
+
+#filters {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 14px;
+}
+
+.filters-button {
+    border: 1px solid var(--background-color);
+    display: flex;
+    width: max-content;
+    margin-bottom: 12px;
+    text-decoration: none;
+    border-radius: 20px;
+    position: relative;
+    transition: transform .2s ease-in-out;
+}
+
+.filters-button:hover {
+    transform: scale(1.1);
+}
+
+.filters-button::after {
+    content: '';
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    position: absolute;
+    box-shadow: 0px 0px 4px 2px var(--primary-color);
+    border-radius: 20px;
+    opacity: 0;
+    transition: opacity .2s ease-in-out;
+}
+
+.filters-button:hover::after {
+    opacity: 0.5;
+}
+
+.filters-button:not(:last-of-type) {
+    margin-right: 12px;
+}
+
+.filters-button i {
+    height: 40px;
+    width: 40px;
+    min-width: 40px;
+    background-color: var(--secondary-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--primary-color);
+    border-radius: 100%;
+}
+
+.filters-button span {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    width: 100%;
+    color: var(--black-color);
+    font-weight: 700;
+}
+
+#informations {
+    display: flex;
+}
+
+#informations i {
+    color: var(--primary-color);
+    font-size: .6em;
+    height: 20px;
+    width: 20px;
+    min-width: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 100%;
+    border: 2px solid var(--background-color);
+}
+
+#informations span {
+    padding-top: 4px;
+    margin-left: 6px;
+}
+
 /* SMARTPHONE */
 @media screen and (max-width: 767px) {
+
+    #searchbox button p {
+        display: none;
+    }
     
+    #searchbox button i {
+        display: block;
+    }
 }
 
 /* TABLETTE */
 @media screen and (min-width: 768px) and (max-width: 1023px) {
 
+    body {
+        background-color: red;
+    }
+
 }
 
 /* DESKTOP */
 @media screen and (min-width: 1024px) {
-    
+
 }

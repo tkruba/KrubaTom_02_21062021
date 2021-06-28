@@ -139,6 +139,14 @@ body {
     margin: 0px;
 }
 
+.spacing {
+    padding: 20px;
+}
+
+.background {
+    background-color: var(--background-color);
+}
+
 /* SCORE */
 .fa-star {
     color: var(--stars-color);
@@ -187,7 +195,7 @@ body {
 
 #signup {
     color: var(--primary-color);
-    font-size: 1.2em;
+    font-size: 1.2rem;
     font-weight: 600;
     position: absolute;
     top: 0;
@@ -214,14 +222,9 @@ body {
     border-color: var(--primary-color);
 }
 
-#search-menu {
-    margin: 16px;
-    margin-top: 30px
-}
-
 h1 {
     font-weight: 700;
-    font-size: 1.5em;
+    font-size: 1.5rem;
 }
 
 #searchbox {
@@ -248,7 +251,7 @@ h1 {
     outline: 0;
     font-family: 'Raleway', 'Arial', 'Sans-Serif';
     font-weight: 700;
-    font-size: 1.2em;
+    font-size: 1.2rem;
 }
 
 #searchbox input::placeholder {
@@ -292,12 +295,9 @@ h1 {
 
 .filters-button::after {
     content: '';
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
+    inset: 0;
     position: absolute;
-    box-shadow: 0px 0px 4px 2px var(--primary-color);
+    box-shadow: 0px 0px 4px 4px var(--primary-color);
     border-radius: 20px;
     opacity: 0;
     transition: opacity .2s ease-in-out;
@@ -339,7 +339,7 @@ h1 {
 
 #informations i {
     color: var(--primary-color);
-    font-size: .6em;
+    font-size: .6rem;
     height: 20px;
     width: 20px;
     min-width: 20px;
@@ -353,6 +353,101 @@ h1 {
 #informations span {
     padding-top: 4px;
     margin-left: 6px;
+}
+
+#popular {
+    position: relative;
+}
+
+#popular > i {
+    position: absolute;
+    top: 40px;
+    right: 24px;
+}
+
+#popular > a:not(:last-of-type) {
+    margin-bottom: 10px;
+}
+
+.card {
+    text-decoration: none;
+    color: black;
+    background-color: var(--white-color);
+    min-height: 120px;
+    border-radius: 14px;
+    padding: 4px;
+    display: flex;
+    position: relative;
+}
+
+.card::after {
+    content: '';
+    inset: 0;
+    position: absolute;
+    box-shadow: 0px 0px 4px 4px var(--primary-color);
+    border-radius: 20px;
+    opacity: 0;
+    transition: opacity .2s ease-in-out;
+}
+
+.card:hover::after {
+    opacity: .5;
+}
+
+#popular .card-img-container {
+    position: relative;
+    width: 100%;
+    padding-bottom: 25%;
+}
+
+#popular .card-img {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 12px 0px 0px 12px;
+}
+
+#popular-img-1 {
+    background-image: url("/Images/Hebergements/4_small/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg");
+}
+
+#popular-img-2 {
+    background-image: url("/Images/Hebergements/4_small/aw-creative-VGs8z60yT2c-unsplash.jpg");
+}
+
+#popular-img-3 {
+    background-image: url("/Images/Hebergements/4_small/febrian-zakaria-sjvU0THccQA-unsplash.jpg");
+}
+
+#popular .card-informations {
+    margin-left: 16px;
+    width: 140%;
+    position: relative;
+}
+
+.card-title {
+    font-weight: 700;
+    font-size: 1rem;
+    margin-top: 12px;
+    margin-bottom: 0px;
+}
+
+.card-prices {
+    margin-top: 4px;
+    margin-bottom: 60px;
+}
+
+.card-prices::after {
+    content: "€";
+    font-weight: 600;
+}
+
+.card-informations > div {
+    position: absolute;
+    bottom: 6px;
 }
 
 /* SMARTPHONE */

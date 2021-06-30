@@ -1,125 +1,125 @@
 @font-face {
     font-family: "Raleway";
-    src: url("/Font/Raleway/Raleway-Thin.ttf") format('truetype');
+    src: url("../Font/Raleway/Raleway-Thin.ttf") format('truetype');
     font-style: normal;
     font-weight: 100;
 }
 
 @font-face {
     font-family: "Raleway";
-    src: url("/Font/Raleway/Raleway-ExtraLight.ttf") format('truetype');
+    src: url("../Font/Raleway/Raleway-ExtraLight.ttf") format('truetype');
     font-style: normal;
     font-weight: 200;
 }
 
 @font-face {
     font-family: "Raleway";
-    src: url("/Font/Raleway/Raleway-Light.ttf") format('truetype');
+    src: url("../Font/Raleway/Raleway-Light.ttf") format('truetype');
     font-style: normal;
     font-weight: 300;
 }
 
 @font-face {
     font-family: "Raleway";
-    src: url("/Font/Raleway/Raleway-Regular.ttf") format('truetype');
+    src: url("../Font/Raleway/Raleway-Regular.ttf") format('truetype');
     font-style: normal;
     font-weight: 400;
 }
 
 @font-face {
     font-family: "Raleway";
-    src: url("/Font/Raleway/Raleway-Medium.ttf") format('truetype');
+    src: url("../Font/Raleway/Raleway-Medium.ttf") format('truetype');
     font-style: normal;
     font-weight: 500;
 }
 
 @font-face {
     font-family: "Raleway";
-    src: url("/Font/Raleway/Raleway-SemiBold.ttf") format('truetype');
+    src: url("../Font/Raleway/Raleway-SemiBold.ttf") format('truetype');
     font-style: normal;
     font-weight: 600;
 }
 
 @font-face {
     font-family: "Raleway";
-    src: url("/Font/Raleway/Raleway-Bold.ttf") format('truetype');
+    src: url("../Font/Raleway/Raleway-Bold.ttf") format('truetype');
     font-style: normal;
     font-weight: 700;
 }
 
 @font-face {
     font-family: "Raleway";
-    src: url("/Font/Raleway/Raleway-ExtraBold.ttf") format('truetype');
+    src: url("../Font/Raleway/Raleway-ExtraBold.ttf") format('truetype');
     font-style: normal;
     font-weight: 800;
 }
 
 @font-face {
     font-family: "Raleway";
-    src: url("/Font/Raleway/Raleway-Black.ttf") format('truetype');
+    src: url("../Font/Raleway/Raleway-Black.ttf") format('truetype');
     font-style: normal;
     font-weight: 900;
 }
 
 @font-face {
     font-family: "Raleway";
-    src: url("/Font/Raleway/Raleway-ThinItalic.ttf") format('truetype');
+    src: url("../Font/Raleway/Raleway-ThinItalic.ttf") format('truetype');
     font-style: italic;
     font-weight: 100;
 }
 
 @font-face {
     font-family: "Raleway";
-    src: url("/Font/Raleway/Raleway-ExtraLightItalic.ttf") format('truetype');
+    src: url("../Font/Raleway/Raleway-ExtraLightItalic.ttf") format('truetype');
     font-style: italic;
     font-weight: 200;
 }
 
 @font-face {
     font-family: "Raleway";
-    src: url("/Font/Raleway/Raleway-LightItalic.ttf") format('truetype');
+    src: url("../Font/Raleway/Raleway-LightItalic.ttf") format('truetype');
     font-style: italic;
     font-weight: 300;
 }
 
 @font-face {
     font-family: "Raleway";
-    src: url("/Font/Raleway/Raleway-Italic.ttf") format('truetype');
+    src: url("../Font/Raleway/Raleway-Italic.ttf") format('truetype');
     font-style: italic;
     font-weight: 400;
 }
 
 @font-face {
     font-family: "Raleway";
-    src: url("/Font/Raleway/Raleway-MediumItalic.ttf") format('truetype');
+    src: url("../Font/Raleway/Raleway-MediumItalic.ttf") format('truetype');
     font-style: italic;
     font-weight: 500;
 }
 
 @font-face {
     font-family: "Raleway";
-    src: url("/Font/Raleway/Raleway-SemiBoldItalic.ttf") format('truetype');
+    src: url("../Font/Raleway/Raleway-SemiBoldItalic.ttf") format('truetype');
     font-style: italic;
     font-weight: 600;
 }
 
 @font-face {
     font-family: "Raleway";
-    src: url("/Font/Raleway/Raleway-BoldItalic.ttf") format('truetype');
+    src: url("../Font/Raleway/Raleway-BoldItalic.ttf") format('truetype');
     font-style: italic;
     font-weight: 700;
 }
 
 @font-face {
     font-family: "Raleway";
-    src: url("/Font/Raleway/Raleway-ExtraBoldItalic.ttf") format('truetype');
+    src: url("../Font/Raleway/Raleway-ExtraBoldItalic.ttf") format('truetype');
     font-style: italic;
     font-weight: 800;
 }
 
 @font-face {
     font-family: "Raleway";
-    src: url("/Font/Raleway/Raleway-BlackItalic.ttf") format('truetype');
+    src: url("../Font/Raleway/Raleway-BlackItalic.ttf") format('truetype');
     font-style: italic;
     font-weight: 900;
 }
@@ -410,25 +410,6 @@ h1 {
     box-shadow: 0px 0px 8px 1px var(--black-color);
     border-radius: 14px;
     opacity: 0.2;
-    transition: opacity .2s ease-in-out;
-}
-
-.card:hover::before {
-    opacity: 0;
-}
-
-.card::after {
-    content: '';
-    inset: 0;
-    position: absolute;
-    box-shadow: 0px 0px 4px 4px var(--primary-color);
-    border-radius: 14px;
-    opacity: 0;
-    transition: opacity .2s ease-in-out;
-}
-
-.card:hover::after {
-    opacity: .5;
 }
 
 #popular .card-img-container {
@@ -452,15 +433,15 @@ h1 {
 }
 
 #popular-img-1 {
-    background-image: url("/Images/Hebergements/4_small/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg");
+    background-image: url("../Images/Hebergements/4_small/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg");
 }
 
 #popular-img-2 {
-    background-image: url("/Images/Hebergements/4_small/aw-creative-VGs8z60yT2c-unsplash.jpg");
+    background-image: url("../Images/Hebergements/4_small/aw-creative-VGs8z60yT2c-unsplash.jpg");
 }
 
 #popular-img-3 {
-    background-image: url("/Images/Hebergements/4_small/febrian-zakaria-sjvU0THccQA-unsplash.jpg");
+    background-image: url("../Images/Hebergements/4_small/febrian-zakaria-sjvU0THccQA-unsplash.jpg");
 }
 
 #popular .card-informations {
@@ -471,7 +452,7 @@ h1 {
 
 .card-title {
     font-weight: 700;
-    font-size: 1rem;
+    font-size: calc(1rem + 1vw);
     margin-top: 12px;
     margin-bottom: 0px;
 }
@@ -516,27 +497,27 @@ h1 {
 }
 
 #accommodations-img-1 {
-    background-image: url("/Images/Hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg");
+    background-image: url("../Images/Hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg");
 }
 
 #accommodations-img-2 {
-    background-image: url("/Images/Hebergements/4_small/fred-kleber-gTbaxaVLvsg-unsplash.jpg");
+    background-image: url("../Images/Hebergements/4_small/fred-kleber-gTbaxaVLvsg-unsplash.jpg");
 }
 
 #accommodations-img-3 {
-    background-image: url("/Images/Hebergements/4_small/reisetopia-B8WIgxA_PFU-unsplash.jpg");
+    background-image: url("../Images/Hebergements/4_small/reisetopia-B8WIgxA_PFU-unsplash.jpg");
 }
 
 #accommodations-img-4 {
-    background-image: url("/Images/Hebergements/4_small/annie-spratt-Eg1qcIitAuA-unsplash.jpg");
+    background-image: url("../Images/Hebergements/4_small/annie-spratt-Eg1qcIitAuA-unsplash.jpg");
 }
 
 #accommodations-img-5 {
-    background-image: url("/Images/Hebergements/4_small/nicate-lee-kT-ZyaiwBe0-unsplash.jpg");
+    background-image: url("../Images/Hebergements/4_small/nicate-lee-kT-ZyaiwBe0-unsplash.jpg");
 }
 
 #accommodations-img-6 {
-    background-image: url("/Images/Hebergements/4_small/febrian-zakaria-M6S1WvfW68A-unsplash.jpg");
+    background-image: url("../Images/Hebergements/4_small/febrian-zakaria-M6S1WvfW68A-unsplash.jpg");
 }
 
 #more-accommodations {
@@ -544,7 +525,7 @@ h1 {
     display: inline-block;
     margin-top: 20px;
     color: var(--black-color);
-    font-size: 1.1rem;
+    font-size: calc(1.1rem + 1vw);
     font-weight: 700;
     transition: color 0.2s ease-in-out;
 }
@@ -583,27 +564,27 @@ h1 {
 }
 
 #activities-img-1 {
-    background-image: url("/Images/Activites/4_small/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg");
+    background-image: url("../Images/Activites/4_small/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg");
 }
 
 #activities-img-2 {
-    background-image: url("/Images/Activites/4_small/paul-hermann-QFTrLdQIRhI-unsplash.jpg");
+    background-image: url("../Images/Activites/4_small/paul-hermann-QFTrLdQIRhI-unsplash.jpg");
 }
 
 #activities-img-3 {
-    background-image: url("/Images/Activites/4_small/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg");
+    background-image: url("../Images/Activites/4_small/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg");
 }
 
 #activities-img-4 {
-    background-image: url("/Images/Activites/4_small/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg");
+    background-image: url("../Images/Activites/4_small/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg");
 }
 
 #activities-img-5 {
-    background-image: url("/Images/Activites/4_small/florian-wehde-xW9e8gdotxI-unsplash.jpg");
+    background-image: url("../Images/Activites/4_small/florian-wehde-xW9e8gdotxI-unsplash.jpg");
 }
 
 #activities-img-6 {
-    background-image: url("/Images/Activites/4_small/lena-paulin-wH2-EJoDcV0-unsplash.jpg");
+    background-image: url("../Images/Activites/4_small/lena-paulin-wH2-EJoDcV0-unsplash.jpg");
 }
 
 footer div {

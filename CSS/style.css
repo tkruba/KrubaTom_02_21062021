@@ -176,14 +176,7 @@ body {
     position: relative;
 }
 
-#navigation nav a {
-    text-decoration: none;
-}
-
-#navigation nav {
-    display: flex;
-}
-
+/* LOGO */
 #brand {
     margin: 20px;
 }
@@ -193,19 +186,29 @@ body {
     margin-bottom: 10px;
 }
 
+/* BOUTONS DE NAVIGATION */
+#navigation nav a {
+    text-decoration: none;
+}
+
+#navigation nav {
+    display: flex;
+    margin-top: 7px;
+}
+
 #signup {
     color: var(--primary-color);
-    font-size: 1.2rem;
-    font-weight: 600;
+    font-size: 1rem;
+    font-weight: 700;
     position: absolute;
-    top: 39px;
-    right: 30px;
+    top: 40px;
+    right: 24px;
 }
 
 .navigation-button {
     font-weight: 500;
     color: var(--black-color);
-    border-bottom: 2px solid var(--background-color);
+    border-bottom: 3px solid var(--background-color);
     width: 50%;
     text-align: center;
     padding: 10px;
@@ -222,11 +225,17 @@ body {
     border-color: var(--primary-color);
 }
 
-h1 {
-    font-weight: 700;
-    font-size: 1.5rem;
+#search-menu {
+    padding-top: 16px;
 }
 
+h1 {
+    font-weight: 700;
+    font-size: 1.4rem;
+}
+
+
+/* BOITE DE RECHERCHE */
 #searchbox {
     margin-top: 30px;
     border: 1px solid var(--background-color);
@@ -237,7 +246,7 @@ h1 {
 
 #searchbox > i {
     margin: 0;
-    padding: 12px;
+    padding: 16px;
     background-color: var(--background-color);
     border-left: 2px solid var(--background-color);
     border-right: 2px solid var(--background-color);
@@ -261,7 +270,7 @@ h1 {
 #searchbox button {
     margin-left: auto;
     border: 2px solid var(--primary-color);
-    padding: 12px;
+    padding: 16px;
     background-color: var(--primary-color);
     border-radius: 13px;
     color: var(--white-color);
@@ -269,7 +278,17 @@ h1 {
 }
 
 #searchbox button i {
+    display: block;
+}
+
+#searchbox button p {
     display: none;
+}
+
+
+/* FILTRES DE RECHERCHE */
+#search-menu h3 {
+    margin-top: 34px;
 }
 
 #filters {
@@ -333,6 +352,7 @@ h1 {
     font-weight: 700;
 }
 
+/* INFORMATIONS VILLE */
 #informations {
     display: flex;
 }
@@ -369,7 +389,7 @@ h1 {
     #accommodations > a:not(last-of-type),
     #activities > a:not(last-of-type)  */
 :is(#popular, #accommodations, #activities) > a:not(:last-of-type) {
-    margin-bottom: 10px;
+    margin-bottom: 20px;
 }
 
 .card {
@@ -533,16 +553,89 @@ h1 {
     color: var(--primary-color);
 }
 
+#activities .card {
+    padding: 0px;
+}
+
+#activities .card::before {
+    box-shadow: 0px 4px 8px 1px var(--black-color);
+}
+
+#activities .card-img-container {
+    position: relative;
+    width: 100%;
+    padding-bottom: 40%;
+}
+
+#activities .card-img {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 12px 12px 0px 0px;
+}
+
+#activities .card-informations {
+    padding: 10px;
+    padding-bottom: 20px;
+}
+
+#activities-img-1 {
+    background-image: url("/Images/Activites/4_small/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg");
+}
+
+#activities-img-2 {
+    background-image: url("/Images/Activites/4_small/paul-hermann-QFTrLdQIRhI-unsplash.jpg");
+}
+
+#activities-img-3 {
+    background-image: url("/Images/Activites/4_small/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg");
+}
+
+#activities-img-4 {
+    background-image: url("/Images/Activites/4_small/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg");
+}
+
+#activities-img-5 {
+    background-image: url("/Images/Activites/4_small/florian-wehde-xW9e8gdotxI-unsplash.jpg");
+}
+
+#activities-img-6 {
+    background-image: url("/Images/Activites/4_small/lena-paulin-wH2-EJoDcV0-unsplash.jpg");
+}
+
+footer div {
+    
+    padding-bottom: 20px;
+}
+
+footer ul {
+    font-size: 1.1rem;
+    font-weight: 700;
+    padding: 0px;
+    margin-bottom: 12px;
+}
+
+footer li {
+    list-style-type: none;
+    line-height: 1.8rem;
+}
+
+footer li a {
+    color: var(--black-color);
+    text-decoration: none;
+    transition: color 0.2s ease-in-out;
+}
+
+footer li a:hover {
+    color: var(--primary-color);
+}
+
 /* SMARTPHONE */
 @media screen and (max-width: 767px) {
 
-    #searchbox button p {
-        display: none;
-    }
-    
-    #searchbox button i {
-        display: block;
-    }
 }
 
 /* TABLETTE */

@@ -385,13 +385,6 @@ h1 {
     right: 24px;
 }
 
-/*  #popular > a:not(last-of-type),
-    #accommodations > a:not(last-of-type),
-    #activities > a:not(last-of-type)  */
-:is(#popular, #accommodations, #activities) > a:not(:last-of-type) {
-    margin-bottom: 20px;
-}
-
 .card {
     text-decoration: none;
     color: black;
@@ -401,6 +394,7 @@ h1 {
     padding: 4px;
     display: flex;
     position: relative;
+    margin-bottom: 20px;
 }
 
 .card::before {
@@ -588,7 +582,6 @@ h1 {
 }
 
 footer div {
-    
     padding-bottom: 20px;
 }
 
@@ -622,8 +615,32 @@ footer li a:hover {
 /* TABLETTE */
 @media screen and (min-width: 768px) and (max-width: 1023px) {
 
-    body {
-        background-color: red;
+    #accommodations {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    #accommodations > h2 {
+        flex: 0 0 100%;
+    }
+
+    #accommodations .card {
+        width: 48%;
+    }
+
+    #activities {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    #activities > h2 {
+        flex: 0 0 100%;
+    }
+
+    #activities .card {
+        width: 48%;
     }
 
 }

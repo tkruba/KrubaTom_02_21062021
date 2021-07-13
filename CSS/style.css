@@ -662,7 +662,7 @@ footer > div > ul > li > a:hover {
 
     /* Filtres de recherche */
     #filters > h2 {
-        flex-basis: content;
+        flex-basis: auto;
     }
 
     .filters-button {

@@ -546,6 +546,7 @@ footer > div > p {
 }
 
 footer > div > ul {
+    line-height: 1.6em;
     padding: 0;
 }
 
@@ -632,10 +633,11 @@ footer > div > ul > li > a:hover {
 
     #navigation > nav > * {
         padding-top: 3em;
+        width: 25%;
+        text-align: center;
     }
 
     .navigation-button {
-        width: 30%;
         border-width: 3px 0 0 0;
         border-color: transparent;
     }

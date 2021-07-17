@@ -513,12 +513,13 @@ h1 {
 
 .card-body {
     margin-left: 16px;
-    line-height: 0.8em;
+    line-height: 0.9em;
     position: relative;
 }
 
 .card-title {
     font-weight: 600;
+    font-size: 1.2em;
 }
 
 .card-description::after {
@@ -779,7 +780,7 @@ footer > div > ul > li > a:hover {
 
     #activities-list > .card > .card-body > .card-title {
         margin-left: 16px;
-        margin-top: 1.6em;
+        margin-top: 1.4em;
     }
 
     /* Footer */
